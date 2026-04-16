@@ -4,7 +4,7 @@ I focus on upstream maintenance for the OpenAI Agents JavaScript SDK.
 
 ## Current focus
 - Upstream repository: [openai/openai-agents-js](https://github.com/openai/openai-agents-js)
-- Recent work areas: `agents-core`, `agents-extensions`, `agents-realtime`, tests, docs
+- Recent work areas: `agents-extensions`, `agents-realtime`, tests, docs, maintenance tooling
 - Recent upstream PRs: [openai/openai-agents-js pull requests by `wsk-builds`](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds)
 
 ## What I'm doing
