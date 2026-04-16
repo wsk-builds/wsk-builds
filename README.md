@@ -10,6 +10,9 @@ I focus on upstream maintenance for the OpenAI Agents JavaScript SDK.
 - Recent work areas: `agents-extensions`, `agents-realtime`, tests, docs, maintenance tooling
 - Recent upstream PRs: [openai/openai-agents-js pull requests by `wsk-builds`](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds)
 
+## Public utility repo
+- [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools): small non-fork public CLI for GitHub PR reporting and profile/application summaries
+
 ## What I'm doing
 I contribute fixes, tests, documentation updates, and maintenance work to the upstream OpenAI Agents JS repository.
 My current public role is best described as an active upstream contributor focused on ongoing maintenance.
