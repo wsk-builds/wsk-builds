@@ -1,7 +1,7 @@
 # wsk-builds
 
-Application repository: [openai/openai-agents-js](https://github.com/openai/openai-agents-js)
-My fork, [wsk-builds/openai-agents-js](https://github.com/wsk-builds/openai-agents-js), is only used for branch work and PR preparation.
+Application repository: [openai/openai-agents-js](https://github.com/openai/openai-agents-js).
+My fork is only used for branch work and PR preparation.
 
 I focus on upstream maintenance for the OpenAI Agents JavaScript SDK.
 
