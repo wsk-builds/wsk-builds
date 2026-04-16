@@ -1,4 +1,4 @@
-# 王尚坤 / wsk-builds
+# wsk-builds
 
 Application repository: [openai/openai-agents-js](https://github.com/openai/openai-agents-js)
 My fork, [wsk-builds/openai-agents-js](https://github.com/wsk-builds/openai-agents-js), is only used for branch work and PR preparation.
