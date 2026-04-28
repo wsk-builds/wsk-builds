@@ -1,61 +1,45 @@
 # wsk-builds
 
-OpenAI Agents SDK contributor and developer tooling builder.
+OpenAI Agents SDK upstream maintenance contributor focused on runtime correctness, streaming behavior, compatibility fixes, tests, documentation accuracy, and reproducible validation.
 
-I focus on upstream maintenance work for [openai/openai-agents-js](https://github.com/openai/openai-agents-js): runtime correctness, streaming behavior, tool/schema compatibility, test reliability, documentation accuracy, and contributor workflow quality.
+## OpenAI OSS Application Snapshot
 
-## Application Snapshot
+[openai/openai-agents-js](https://github.com/openai/openai-agents-js) is OpenAI's official JavaScript/TypeScript Agents SDK for multi-agent workflows and voice agents. It is public developer infrastructure for OpenAI builders, with about `2.9k` stars and `713` forks as of April 28, 2026.
 
-- `9` merged upstream PRs to [openai/openai-agents-js](https://github.com/openai/openai-agents-js).
-- `15` authored upstream PRs total: `9` merged, `1` active, `5` closed after maintainer feedback or scope changes.
-- Active validation work on [#1178](https://github.com/openai/openai-agents-js/pull/1178): preserving streaming usage after `AbortSignal` cancellation.
-- Supporting tooling: [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools), a zero-dependency CLI for reproducible GitHub PR reporting.
-- Evidence archive: [upstream-contributions](https://github.com/wsk-builds/upstream-contributions).
-- Current upstream scale: [openai/openai-agents-js](https://github.com/openai/openai-agents-js) has about `2.9k` stars and `713` forks as of April 28, 2026.
+My public contribution record is concentrated in upstream maintenance work for that SDK:
 
-## Why This Matters for OpenAI
+- `9` merged PRs to [openai/openai-agents-js](https://github.com/openai/openai-agents-js).
+- Runtime and compatibility fixes across `agents-core`, `agents-extensions`, and `agents-realtime`.
+- Test reliability, documentation accuracy, and contributor workflow improvements.
+- Active runtime validation on [#1178](https://github.com/openai/openai-agents-js/pull/1178) for streaming usage after `AbortSignal` cancellation.
+- Public evidence archive: [wsk-builds/upstream-contributions](https://github.com/wsk-builds/upstream-contributions).
 
-My public work is concentrated where SDK reliability matters to developers building with OpenAI:
+## Release-Note Evidence
 
-- Runtime compatibility: preserving behavior across schema changes, tool input shapes, and package boundaries.
-- Streaming correctness: validating cancellation, retries, usage accounting, and partial-stream state.
-- Test reliability: adding regression coverage and stabilizing harness behavior before changes merge.
-- Documentation accuracy: keeping examples and install paths aligned with actual package behavior.
-- Contributor workflow quality: making local validation and reporting easier to reproduce.
-
-## Recent Upstream Impact
+The [v0.8.4 release notes](https://github.com/openai/openai-agents-js/releases/tag/v0.8.4) publicly list my merged runtime, Realtime, documentation, test, and workflow contributions:
 
 | Area | Evidence | Impact |
 | --- | --- | --- |
-| Runtime compatibility | [#1172](https://github.com/openai/openai-agents-js/pull/1172), [#1171](https://github.com/openai/openai-agents-js/pull/1171), [#1170](https://github.com/openai/openai-agents-js/pull/1170) | Restored discriminated union tool schemas, preserved nested audio config, and failed fast on unsupported SIP VAD fields. |
-| Reliability and tests | [#1169](https://github.com/openai/openai-agents-js/pull/1169), [#1162](https://github.com/openai/openai-agents-js/pull/1162) | Stabilized leak detection and added AI SDK UI boundary coverage. |
-| Docs and workflow | [#1166](https://github.com/openai/openai-agents-js/pull/1166), [#1165](https://github.com/openai/openai-agents-js/pull/1165), [#1160](https://github.com/openai/openai-agents-js/pull/1160), [#1158](https://github.com/openai/openai-agents-js/pull/1158) | Fixed contributor tooling, corrected example paths, synced AI SDK docs/examples, and repaired docs commands. |
+| Runtime compatibility | [#1172](https://github.com/openai/openai-agents-js/pull/1172), [#1171](https://github.com/openai/openai-agents-js/pull/1171), [#1170](https://github.com/openai/openai-agents-js/pull/1170) | Preserved tool-schema compatibility, nested audio config behavior, and SIP VAD validation. |
+| Reliability and tests | [#1169](https://github.com/openai/openai-agents-js/pull/1169), [#1162](https://github.com/openai/openai-agents-js/pull/1162) | Stabilized test infrastructure and added AI SDK UI boundary coverage. |
+| Docs and workflow | [#1166](https://github.com/openai/openai-agents-js/pull/1166), [#1165](https://github.com/openai/openai-agents-js/pull/1165), [#1160](https://github.com/openai/openai-agents-js/pull/1160), [#1158](https://github.com/openai/openai-agents-js/pull/1158) | Improved contributor validation, example paths, AI SDK docs/examples, and tools documentation. |
 
-## Current Focus
+## Active Runtime Validation
 
-[#1178](https://github.com/openai/openai-agents-js/pull/1178) is an active runtime-validation thread for preserving streaming usage after `AbortSignal` cancellation. The public thread includes:
+[#1178](https://github.com/openai/openai-agents-js/pull/1178) shows current upstream validation work around streaming usage accounting after cancellation. The public thread includes review comments, runtime-behavior probe analysis, and ready-to-run live probe instructions for completed, early-abort, mid-abort, and late-abort streaming scenarios.
 
-- retry-adjusted usage accounting follow-up in `packages/agents-core/src/usage.ts`
-- regression coverage for retry plus early-abort streaming behavior
-- runtime-behavior-probe analysis comparing `main` against the candidate branch
-- ready-to-run live probe instructions for maintainers with `OPENAI_API_KEY`
-- follow-up for multi-entry usage detail replacement
+## What Pro/API Credits Would Produce
 
-## What 6 Months of Pro/Codex Would Unlock
+If selected for OpenAI developer Pro access, I would apply it directly to public OpenAI ecosystem maintenance:
 
-If selected for OpenAI's developer Pro access, I would apply it directly to public OpenAI ecosystem work:
+- Runtime regression PRs and minimized repros for streaming, retries, aborts, and usage accounting.
+- Documentation and example drift audits with public patches.
+- Release-readiness and contribution reports through [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools) and maintainer-facing validation notes.
 
-- Expand runtime regression coverage for streaming, retries, aborts, and usage accounting in `openai/openai-agents-js`.
-- Use larger-context Codex sessions for focused issue reproduction, failing test minimization, and review-ready patches.
-- Run deeper documentation and examples drift audits across Agents SDK packages.
-- Improve `agents-pr-tools` into a stronger reporting layer for upstream contribution summaries, release notes, and maintainer-facing evidence.
-- Convert review feedback into faster validation loops: probe design, scenario matrices, and concise maintainer handoff notes.
-
-## Key Verification Links
+## Verification Links
 
 - [Merged upstream PRs](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds+is%3Amerged)
-- [Active upstream PRs](https://github.com/openai/openai-agents-js/pulls?q=is%3Apr+author%3Awsk-builds+is%3Aopen)
 - [Runtime validation thread #1178](https://github.com/openai/openai-agents-js/pull/1178)
-- [Issue-to-fix flow: #1163 -> #1171](https://github.com/openai/openai-agents-js/issues/1163)
+- [v0.8.4 release notes](https://github.com/openai/openai-agents-js/releases/tag/v0.8.4)
 - [Evidence archive](https://github.com/wsk-builds/upstream-contributions)
 - [Contribution reporting tool](https://github.com/wsk-builds/agents-pr-tools)
