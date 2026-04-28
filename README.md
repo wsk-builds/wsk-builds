@@ -11,7 +11,7 @@ I focus on upstream maintenance work for [openai/openai-agents-js](https://githu
 - Active validation work on [#1178](https://github.com/openai/openai-agents-js/pull/1178): preserving streaming usage after `AbortSignal` cancellation.
 - Supporting tooling: [agents-pr-tools](https://github.com/wsk-builds/agents-pr-tools), a zero-dependency CLI for reproducible GitHub PR reporting.
 - Evidence archive: [upstream-contributions](https://github.com/wsk-builds/upstream-contributions).
-- Current upstream scale: [openai/openai-agents-js](https://github.com/openai/openai-agents-js) has `2,833` stars and `708` forks as of April 25, 2026.
+- Current upstream scale: [openai/openai-agents-js](https://github.com/openai/openai-agents-js) has about `2.9k` stars and `713` forks as of April 28, 2026.
 
 ## Why This Matters for OpenAI
 
