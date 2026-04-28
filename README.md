@@ -1,10 +1,10 @@
 # wsk-builds
 
-OpenAI Agents SDK upstream maintenance contributor focused on runtime correctness, streaming behavior, compatibility fixes, tests, documentation accuracy, and reproducible validation.
+OpenAI Agents SDK upstream maintenance contributor focused on runtime correctness, streaming behavior, compatibility fixes, tests, documentation accuracy, and release-readiness validation.
 
-## OpenAI OSS Application Snapshot
+## Codex for Open Source Application Snapshot
 
-[openai/openai-agents-js](https://github.com/openai/openai-agents-js) is OpenAI's official JavaScript/TypeScript Agents SDK for multi-agent workflows and voice agents. It is public developer infrastructure for OpenAI builders, with about `2.9k` stars and `713` forks as of April 28, 2026.
+[openai/openai-agents-js](https://github.com/openai/openai-agents-js) is OpenAI's official JavaScript/TypeScript Agents SDK for multi-agent workflows and voice agents. It is public developer infrastructure for OpenAI builders, with about `2.9k` stars and `714` forks as of April 28, 2026.
 
 My public contribution record is concentrated in upstream maintenance work for that SDK:
 
@@ -28,9 +28,9 @@ The [v0.8.4 release notes](https://github.com/openai/openai-agents-js/releases/t
 
 [#1178](https://github.com/openai/openai-agents-js/pull/1178) shows current upstream validation work around streaming usage accounting after cancellation. The public thread includes review comments, runtime-behavior probe analysis, and ready-to-run live probe instructions for completed, early-abort, mid-abort, and late-abort streaming scenarios.
 
-## What Pro/API Credits Would Produce
+## What Codex for Open Source Would Produce
 
-If selected for OpenAI developer Pro access, I would apply it directly to public OpenAI ecosystem maintenance:
+If selected for Codex for Open Source, I would apply ChatGPT Pro and API credits directly to public OpenAI ecosystem maintenance:
 
 - Runtime regression PRs and minimized repros for streaming, retries, aborts, and usage accounting.
 - Documentation and example drift audits with public patches.
